@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Dialog</title>
+    <link href="../style/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal-label" aria-hidden="true">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    				<h4 class="modal-title" id="myModal-label">$title$</h4>
+    			</div>
+    			<div class="modal-body">
+    				$content$
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-default" data-dismiss="modal">$close-text$</button>
+    				<button type="button" class="btn btn-primary">$save-text$</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <div class="container">
+        <!-- Modal Launcher -->
+        <div class="row">
+            <button type="button" class="col-md-offset-3 col-md-6 btn btn-success" data-toggle="modal" data-target="#myModal">
+                Launch Modal!
+            </button>
+        </div>
+    </div>
+
+    <script src="../scripts/jquery-2.1.4.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+</body>
+
+</html>
